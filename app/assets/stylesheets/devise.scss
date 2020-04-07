@@ -1,0 +1,44 @@
+.login-container {
+  background-color: #a1cbed;
+  width: 500px;
+  margin: auto;
+  padding: 50px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  border-radius: 3px;
+  a {
+    width: 100%;
+  }
+}
+
+.login-container .field input {
+  width: 100%;
+}
+
+.actions input {
+  width: 100%;
+}
+
+.or {
+  text-align: center;
+  margin: 10px 0;
+  width: 100%;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: " ";
+    background-color: grey;
+    height: 1px;
+    width: 45%;
+    top: 50%;
+    left: 0;
+  }
+  &:after {
+    position: absolute;
+    content: " ";
+    background-color: grey;
+    height: 1px;
+    width: 45%;
+    top: 50%;
+    right: 0;
+  }
+}

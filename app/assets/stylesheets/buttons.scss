@@ -1,0 +1,59 @@
+.slider-button {
+  position: absolute;
+  top: 120px;
+  z-index: 1;
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+  border: none;
+  background-image: -webkit-linear-gradient(to bottom, #f4f1ee, #fff);
+  background-image: linear-gradient(to bottom, #f4f1ee, #fff);
+  box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,0.5);
+  border-radius: 5px;
+  height: 40px;
+  width: 70px;
+  font-size: 20px;
+  color: rgba(0,0,0,0.4);
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+  &.next {
+    right: 5px;
+  }
+  &.prev {
+    left: 5px;
+  }
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(to bottom, #fff, #f4f1ee);
+    background-image: linear-gradient(to bottom, #fff, #f4f1ee);
+    color: #565656;
+  }
+  &:active {
+    background-image: -webkit-linear-gradient(to bottom, #efedec, #f7f4f4);
+    background-image: linear-gradient(to bottom, #efedec, #f7f4f4);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+.todo-form-button {
+    flex: 1;
+    height: 50px;
+    background-color: #F2D0A3;
+    color: #4c4c4c;
+    font-weight: 500;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #afafaf;
+    border-left: 0;
+    transition: all 150ms ease;
+    &:hover {
+      color: #3a3a3a;
+      background-color: #F1C9A2;
+      border: 1px solid #989898;
+      border-left: 0;
+      box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    }
+  }

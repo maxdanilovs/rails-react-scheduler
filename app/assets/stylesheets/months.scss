@@ -1,0 +1,51 @@
+.months {
+  height: 40px;
+  width: 80%;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.month {
+  position: relative;
+  flex: 1;
+  margin: 0 5px;
+  padding: 2px 0px;
+  min-width: 10px;
+  text-align: center;
+  background-color: #A1CBED;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  cursor: pointer;
+  border: none;
+  transition: all 300ms ease;
+  &:hover {
+    background-color: #7EB2DD;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+.currentMonth {
+  background-color: #F2D0A3;
+  &:hover {
+    background-color: #F1C9A2;
+  }
+}
+
+.selectedMonth {
+  &::after {
+    position: absolute;
+    background-color: #7EB2DD;
+    content: "";
+    display: block;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    width: 100%;
+    height: 3px;
+    bottom: -8px;
+    left: 0;
+  }
+}

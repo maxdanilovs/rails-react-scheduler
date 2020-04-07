@@ -1,0 +1,35 @@
+body {
+  background-color: #e8ebed;
+  font-family: Montserrat, Helvetica, Times, serif;
+}
+
+#root {
+  height: 800px;
+  overflow-x: hidden;
+}
+
+.message {
+  position: absolute;
+  z-index: 100;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  left: calc(50% - 300px);
+  top: 15px;
+  height: 80px;
+  width: 600px;
+  padding: 5px 0;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  transition: all 700ms ease;
+  &.hidden {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+
+.text-logo {
+  font-weight: 700;
+  letter-spacing: -.15rem;
+  font-size: 22px;
+}

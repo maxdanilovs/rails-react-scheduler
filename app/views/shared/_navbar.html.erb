@@ -1,0 +1,8 @@
+<div class="navbar navbar-dark bg-dark mb-3">
+  <%= link_to "Scheduler App", root_path, class: "navbar-brand text-logo"  %>
+  <% if user_signed_in? %>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
+  <% else %>
+  <%= link_to "Log in", new_user_session_path, class: "btn btn-primary" %>
+  <% end %>
+</div>
